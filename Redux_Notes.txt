@@ -1,0 +1,21 @@
+Redux
+
+What is redux?
+- Redux is an open source JavaScript library for managing and centralizing application state.
+
+- <App/> ------> <Home/>----------> <Post/>
+  . Suppose you created a state c in <App/> and want to use it in <Post/> then u can send it by props. But if you created a state c in <Post/> and want to use it in <App/> or in <Home/> then it is not possible as React allows unidirectional flow of data. 
+  
+  Here comes the use of react.
+
+  We create a store where we keep the variables in another file and use the stored variables across all components.
+
+-Terminologies for  Redux 
+    1. Store - where all our variables and data are kept
+    2. Reducer - the only way using which we can change the state of the data in store
+    3. Action - trigger point of gun. If gun is reducer then action is the trigger. On action the reducer is activated.
+    4. State
+
+-Installation
+    1. npm install @reduxjs/toolkit
+    2. npm install react-redux
